@@ -21,10 +21,10 @@ try:
 
 	id_path = '//*[@id="loginId"]'
 	id_in   = driver.find_element_by_xpath(id_path)
-	id_in.send_keys("yongmin990821@gmail.com")
+	id_in.send_keys("My ID")
 	pw_path = '//*[@id="passwordNo"]'
 	pw_in   = driver.find_element_by_xpath(pw_path)
-	pw_in.send_keys("dydals0821!")
+	pw_in.send_keys("My PW")
 	time.sleep(1)
 
 	btn_path= '//*[@id="loginbtn"]'
