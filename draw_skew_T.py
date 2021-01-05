@@ -100,4 +100,4 @@ h.add_grid(increment=20)
 h.plot_colormapped(u, v, metpy.calc.wind_speed(u, v))
 
 plt.show()
-plt.savefig(f'./SkewT_{utc}', bbox_inches = 'tight')
+plt.savefig(f'./SkewT_{utc}.png', bbox_inches = 'tight')
