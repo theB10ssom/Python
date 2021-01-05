@@ -99,5 +99,5 @@ h = Hodograph(ax_hod, component_range=80.)
 h.add_grid(increment=20)
 h.plot_colormapped(u, v, metpy.calc.wind_speed(u, v))
 
-plt.show()
 plt.savefig(f'./SkewT_{utc}.png', bbox_inches = 'tight')
+plt.show()
