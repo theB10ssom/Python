@@ -28,7 +28,7 @@ def sel_nearest_loc(lat, lon, data_lat, data_lon, data):
     
     ([xloc],[yloc]) = np.where(c == np.min(c))
     
-    nearest = data.sel(south_north = yloc, west_east = xloc)
+    nearest = data.sel(south_north = xloc, west_east = yloc)
     return nearest
 
 #=================Data=====================
