@@ -1,9 +1,3 @@
-import requests
-from urllib.parse import urlparse
-from bs4 import BeautifulSoup
-import pandas as pd
-from tqdm import tqdm
-
 class Article():
     
     def __init__(self, keyword, page_range):
@@ -54,6 +48,13 @@ class Article():
         return DF
 
 if __name__ == "__main__":
+    
+    import requests
+    from urllib.parse import urlparse
+    from bs4 import BeautifulSoup
+    import pandas as pd
+    from tqdm import tqdm
+
     article = Article('날씨', 5)
     news_data =article.crawling()
     print(news_data.tail())
