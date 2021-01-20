@@ -53,9 +53,10 @@ class Article():
         
         return DF
 
-
-article = Article('날씨', 5)
-news_data =article.crawling()
-print(news_data.tail())
-directory = 'C:/My/Directory/'
-news_data.to_csv(f"{directory}/{article.keyword}_news.csv", encoding = 'utf-8', index = False)
+if __name__ == "__main__":
+    article = Article('날씨', 5)
+    news_data =article.crawling()
+    print(news_data.tail())
+    #if you want to save -> activate this codes
+    #directory = 'C:/My/Directory/'
+    #news_data.to_csv(f"{directory}/{article.keyword}_news.csv", encoding = 'utf-8', index = False)
