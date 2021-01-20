@@ -54,7 +54,7 @@ class Article():
         return DF
 
 
-article = Article('강릉 날씨', 5)
+article = Article('날씨', 5)
 news_data =article.crawling()
 print(news_data.tail())
 directory = 'C:/My/Directory/'
