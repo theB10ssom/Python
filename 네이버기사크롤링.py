@@ -57,5 +57,5 @@ class Article():
 article = Article('강릉 날씨', 5)
 news_data =article.crawling()
 print(news_data.tail())
-directory = 'C:/Users/jhk32/OneDrive/바탕 화면'
+directory = 'C:/My/Directory/'
 news_data.to_csv(f"{directory}/{article.keyword}_news.csv", encoding = 'utf-8', index = False)
