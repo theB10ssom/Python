@@ -53,7 +53,7 @@ if __name__ == '__main__':
     weathermap = Weather_map_api(url, serviceKey)
 
     operation = 'getSurfaceChart'
-    params = {'code' : 24, 'time' : '20210121'} 
+    params = {'code' : 12, 'time' : '20210121'} 
     response = weathermap.get_request_query(operation, params)
     api_out = weathermap.parse_response()
 
