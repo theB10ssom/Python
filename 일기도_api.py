@@ -13,8 +13,9 @@ import urllib.request
 import urllib.parse as urlparse
 import requests
 import xmltodict
-from pandas import json_normalize
-from IPython.display import Image
+from pandas import json_normalize 
+#from pandas.io.json import json_normalize #use if pandas version is low (about 0.25?)
+from IPython.display import Image, display
 
 
 
@@ -57,7 +58,8 @@ if __name__ == '__main__':
     api_out = weathermap.parse_response()
 
     img_url = api_out.iloc[0,-1]
-    weathermap.show_image(img_url)
-
+    display(weathermap.show_image(img_url))
+    
+    #save option
     #urllib.request.urlretrieve(img_url, "test.png")
 
