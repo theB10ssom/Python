@@ -7,6 +7,17 @@ Original file is located at
     https://colab.research.google.com/drive/1RuXaemmXpRK_XGWhJYUD80x5XrZH8Glh
 """
 
+!pip install xmltodict
+import pandas as pd
+import urllib.request
+import urllib.parse as urlparse
+import requests
+import xmltodict
+from pandas import json_normalize
+from IPython.display import Image
+
+
+
 class Weather_map_api():
     def __init__(self, url,serviceKey):
         self.url = url
@@ -35,17 +46,6 @@ class Weather_map_api():
         return Image(url = image_url)
 
 if __name__ == '__main__':
-    try:
-        import pandas as pd
-        import urllib.request
-        import urllib.parse as urlparse
-        import requests
-        import xmltodict
-        from pandas import json_normalize
-        from IPython.display import Image
-    except:
-        !pip install xmltodict
-
 
     url = 'http://apis.data.go.kr/1360000/WthrChartInfoService'
     serviceKey = 'qDuu1ONnbLKeWob7h6RHk6fMpCeS9GIXnho%2FAPhV3Hx%2FzQWyYsW76wqaKlGrkJf5BEnycksXJCZ1Fy7VTMWWMQ%3D%3D'
