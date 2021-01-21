@@ -49,11 +49,11 @@ class Weather_map_api():
 if __name__ == '__main__':
 
     url = 'http://apis.data.go.kr/1360000/WthrChartInfoService'
-    serviceKey = 'qDuu1ONnbLKeWob7h6RHk6fMpCeS9GIXnho%2FAPhV3Hx%2FzQWyYsW76wqaKlGrkJf5BEnycksXJCZ1Fy7VTMWWMQ%3D%3D'
+    serviceKey = 'your servicekey'
     weathermap = Weather_map_api(url, serviceKey)
 
     operation = 'getSurfaceChart'
-    params = {'code' : 24, 'time' : '20210121'}
+    params = {'code' : 24, 'time' : '20210121'} 
     response = weathermap.get_request_query(operation, params)
     api_out = weathermap.parse_response()
 
