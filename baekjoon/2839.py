@@ -1,3 +1,5 @@
+# 설탕배달 문제
+
 N = int(input('enter'))
 
 while N > 0:
