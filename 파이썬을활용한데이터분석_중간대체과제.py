@@ -22,6 +22,7 @@ class Midterm:
     def __init__(self):
         self._root = []
         self._gdp_root = []
+        # 지정된 변수 이름 초기화
         self._dfP = pd.DataFrame()
         self._dfG = pd.DataFrame()
         self._new_dfP = pd.DataFrame()
