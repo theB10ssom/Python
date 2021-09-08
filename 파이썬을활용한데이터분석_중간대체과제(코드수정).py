@@ -72,3 +72,4 @@ if __name__ == "__main__":
     p.rename_data()
     df = p.remove_footnote()
     dfP = p.merge_data()
+    
