@@ -72,5 +72,3 @@ if __name__ == "__main__":
     p.rename_data()
     df = p.remove_footnote()
     dfP = p.merge_data()
-
-    dfP.to_csv("./강동구청 인턴/test_dataset.csv", index = False)
