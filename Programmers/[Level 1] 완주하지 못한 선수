@@ -1,0 +1,29 @@
+## 내 풀이 - 효율성에서 계속 탈락
+
+def solution(participant, completion):
+    
+   # 처음에 왜 이렇게 했는지 ?
+   dict1 = {i : participant.count(i) - completion.count(i) for i in participant if participant.count(i) - completion.count(i) != 0}
+
+   return list(dict1.keys())[0]
+   
+   
+def solution(participant, completion):
+    
+    for i in completion: #for는 O(N)
+        participant.remove(i) #remove 는 O(N)
+    return participant[0]
+    
+    
+## 다른사람의 풀이
+def solution(participant, completion):
+    participant.sort()
+    completion.sort()
+    completion.append('') #append는 O(1)
+    answer = ''
+    for i in range(0, len(completion)): #for는 O(N)
+        if participant[i] != completion[i]:
+            answer=participant[1]
+            return answer
+            
+  
