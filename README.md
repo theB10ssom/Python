@@ -34,3 +34,6 @@
   
  * Singluar_Wind_Decompostion  
    특이값 분해를 서울 관측소에서 관측된 바람 데이터에 적용해봄 (실험용)
+   
+ * image_downloader_batch  
+   이미지 URL DataFrame을 입력받아 배치 단위로 이미지 파일을 다운받아 압축파일을 만드는 함수  
