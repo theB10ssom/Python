@@ -14,7 +14,7 @@
 * 일기도_api  
   기상청 일기도 api 사용하는 코드 -> 다듬어서 dataportal 패키지로 배포해놓음  
 
-* scaler
+* scaler  
   pandas dataframe column 각각에 다른 scaler를 적용하려고 만든 코드  
 
 * auto_download  
